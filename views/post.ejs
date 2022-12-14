@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<%if(firstcontent!="iag"){%>
+<h1>home</h1>
+<p><%=firstcontent%></p>
+<%}%>
+
+<%for(var i=0;i<content.length;i++){%>
+
+    <!-- content.foreach(function(con){
+        
+<h1><%=content[i].title%></h1>
+    }); -->
+
+<h1><%=content[i].title%></h1>
+<p><%=content[i].vlog%></p>
+
+<%}%>
+
+
+<%- include('partials/footer'); -%>
