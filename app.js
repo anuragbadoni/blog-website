@@ -96,7 +96,7 @@ res.redirect("/");
 
 app.get("/posts/:postname",function(req,res)
 {
-  var requested=_.lowerCase(req.params.postname);
+  var requested=req.params.postname;
 
   // var fit=[];
 blog.find({title:requested},function(err,x){
