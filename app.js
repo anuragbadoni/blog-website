@@ -1,5 +1,5 @@
 const mongoose=require ("mongoose");mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://anurag:Hesoyam.123@cluster0.9jqmkrm.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://anurag:"+process.env.MONGO+"@cluster0.9jqmkrm.mongodb.net/?retryWrites=true&w=majority");
 
 const blogschema = new mongoose.Schema({//mongo
   title : String,
